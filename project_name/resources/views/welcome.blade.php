@@ -19,4 +19,8 @@
     </h2>
     <h2><a href="{{route('two')}}>Name Route</a></h2>
     <h2><a href="{{URL::current()}}>{{URL::current()}}</a></h2>
+    <h2><a href="{{URL::full()}}>{{URL::full()}}</a></h2>
+    <img src ="{{asset('images/img1.jpg')}}" alt="" srcset="" >
+    <img src ="{{url('storage'/images/img1.jpg')}}" alt="" srcset="" >
+
 
