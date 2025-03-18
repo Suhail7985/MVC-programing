@@ -16,6 +16,7 @@ class abc extends Controller
     }
     function xyz(){
         return "this is xyz";
+        return "hello";
 
     }
 }
