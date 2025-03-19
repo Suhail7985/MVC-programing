@@ -1,9 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\abc;
-Route::get('/abc', [abc::class, 'abcd'] );
-Route::get('abc/{name}' ,[abc::class,'abcd']);
-Route::get('xyz' ,[abc::class,'xyz']);
 
-Route::get('/student/viewone', [test::class, 'index']);
+Route::get('/', function () {
+    return view('students.index');
+});
+
+Route::get('/student/aman', function () {
+    return view('students.aman');
+});
+
+Route::get('/student/pooja', function () {
+    return view('students.pooja');
+});
+
+Route::get('/student/rakesh', function () {
+    return view('students.rakesh');
+});
