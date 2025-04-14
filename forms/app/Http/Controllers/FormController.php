@@ -16,9 +16,13 @@ class FormController extends Controller
         $request->validate([
             'name'  => 'required',
             'email' => 'required|email',
+        ],[
+            'name.required' => 'Name is required',
+            'email.required' => 'Email is required',
+            'email.email' => 'Email is invalid',
+            
         ]);
 
-        // (Optional) Do something with the data, like saving to DB
 
         return back()->with('success', 'Form submitted successfully!');
     }
